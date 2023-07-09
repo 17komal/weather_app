@@ -1,0 +1,85 @@
+<div class="container">
+
+    <section class="main">
+
+        <div class="header">
+            <h2>Weather App</h2>
+        </div>
+        <div class="body">
+
+
+            <div>
+                <input type="text" placeholder="Enter City" name="city" id="city" [(ngModel)]="city"
+                    (change)="Changed(city)" (keyup)="Changed(city)">
+
+                <button type="button" class="btn btn-success" id="inputSubmit" (click)="check(city)"> SHOW</button>
+            </div>
+
+        </div>
+        <div class="footer"  *ngIf="showData">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 offset-md-8">
+                    <p class="wName">{{WeatherData['name']}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="d-flex rowOne">
+                            <p class="wDate">{{WeatherData['date'] | date: 'fullDate'}} <span>
+                                    {{WeatherData['date'] | date: 'shortTime'}} </span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex rowTwo">
+                            <div class="icon">
+                                <img src="http://openweathermap.org/img/w/{{WeatherData['icon']}}.png">
+                            </div>
+                            <div class="temp">
+                                <p class="wTemp">{{WeatherData['temp']}} </p>
+                                <span class="wTempp">°C </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex rowThree">
+                        <p class="wDes">{{WeatherData['weather']}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 px-5">
+                    <div class="row wDetails">
+                        <div class="col-md-6 col-6 wDetailsLabel"> Sunrise / Sunset</div>
+                        <div class="col-md-6 col-6 wDetailsVal"> {{WeatherData['sunrise'] | date: 'shortTime'}} / {{WeatherData['sunset'] | date: 'shortTime'}}</div>
+                    </div>
+                   
+                    <div class="row wDetails">
+                        <div class="col-md-6 col-6 wDetailsLabel"> Wind Speed </div>
+                        <div class="col-md-6 col-6 wDetailsVal"> {{WeatherData['windSpeed']}} mps </div>
+                    </div>
+                    <div class="row wDetails">
+                        <div class="col-md-6 col-6 wDetailsLabel"> Humidity </div>
+                        <div class="col-md-6 col-6 wDetailsVal">{{WeatherData['humidity']}} %</div>
+                    </div>
+                    <div class="row wDetails">
+                        <div class="col-md-6 col-6 wDetailsLabel"> Air Pressure </div>
+                        <div class="col-md-6 col-6 wDetailsVal"> {{WeatherData['pressure']}} mph </div>
+                    </div>
+                    <div class="row wDetails">
+                        <div class="col-md-6 col-6 wDetailsLabel"> Visibility </div>
+                        <div class="col-md-6 col-6 wDetailsVal">{{WeatherData['visibility']}} m </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+       
+
+        </div>
+    </section>
+
+</div>

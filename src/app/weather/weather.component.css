@@ -1,0 +1,181 @@
+.alert-custom {
+  background-color: #4B515D;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 15px;
+}
+
+.main {
+
+  margin: 2rem;
+}
+
+.error_show {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.header h2 {
+  text-align: center;
+  line-height: 4rem;
+  border-bottom: 2px solid rgb(4, 143, 112);
+}
+
+.body {
+  margin: 5%
+}
+
+#city {
+  color: #4B515D;
+  border-radius: 15px;
+  width: 80%;
+  height: 50px;
+  padding: 25px;
+}
+
+#inputSubmit {
+  background-color: rgb(4, 143, 112);
+  width: 15%;
+  border-radius: 15px;
+  float: right;
+  height: 53px;
+}
+
+.footer {
+  background-color: rgb(4, 143, 112);
+  color: #fff;
+  margin: 5%;
+  padding: 2%;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px #95cbcc;
+}
+
+.rowOne {
+  justify-content: space-between;
+}
+
+.wName {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.wDate {
+  float: right;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.rowTwo {
+  padding: 1%;
+}
+
+.temp {
+  display: contents;
+}
+
+.wTemp {
+  font-size: 6em;
+}
+
+.wTempp {
+  /* display: inline; */
+  width: 50px;
+  padding-top: 6%;
+  padding-left: 1%;
+  font-size: 20px;
+}
+
+
+.wDetails {
+  text-align: center;
+  border-bottom: 1px dashed #FFF;
+  padding-top: 1rem;
+}
+
+.wDetailsLabel {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.wDetailsVal {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.icon img {
+  height: 10em;
+}
+
+
+@media only screen and (max-width: 530px) {
+  .body {
+    margin: 5%
+  }
+
+  #city {
+    border-radius: 10px !important;
+    width: 70% !important;
+    height: 50px;
+    padding: 15px !important;
+  }
+
+  #inputSubmit {
+    width: 25% !important;
+    border-radius: 10px !important;
+    float: right;
+    height: 50px !important;
+    font-size: 13px;
+  }
+
+  .footer {
+    padding: 2% !important;
+  }
+
+  .rowOne {
+    justify-content: space-evenly !important;
+  }
+
+  .rowTwo {
+    justify-content: center !important;
+  }
+
+  .wName {
+    font-size: 20px !important;
+  }
+
+  .wDate {
+    font-size: 10px;
+  }
+
+  .wTemp {
+    font-size: 3em !important;
+    margin: 0px !important;
+  }
+
+  .wTempp {
+    width: 30px !important;
+    padding-top: 15% !important;
+    padding-left: 1% !important;
+    font-size: 8px !important;
+  }
+
+  .rowThree {
+    justify-content: center !important;
+  }
+
+  .wDetails {
+    text-align: left;
+  }
+
+  .wDetailsLabel {
+    font-size: 10px !important; 
+  }
+  .wDetailsVal {
+    font-size: 9px !important;
+  }
+  .icon img {
+    height: 5em !important;
+  }
+  
+
+}
